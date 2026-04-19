@@ -27,3 +27,12 @@ repositories:
       - platform
     rulesets:
       - default-branch
+  - name: AdmanCorp.com
+    description: Main repository for AdmanCorp's website and public content.
+    visibility: public
+    topics:
+      - website
+      - public
+      - content
+    rulesets:
+      - default-branch
