@@ -20,6 +20,7 @@ defaults:
 repositories:
   - name: platform-example
     description: Example repository managed by Terraform.
+    visibility: public
     topics:
       - terraform
       - github
