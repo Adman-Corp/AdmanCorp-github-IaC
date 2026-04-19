@@ -14,6 +14,7 @@ defaults:
   archive_on_destroy: true
   vulnerability_alerts: true
   web_commit_signoff_required: true
+  license_template: mit
   topics: []
   rulesets: []
 
@@ -25,5 +26,14 @@ repositories:
       - terraform
       - github
       - platform
+    rulesets:
+      - default-branch
+  - name: AdmanCorp.com
+    description: Main repository for AdmanCorp's website and public content.
+    visibility: public
+    topics:
+      - website
+      - public
+      - content
     rulesets:
       - default-branch
