@@ -55,8 +55,8 @@ Set these GitHub repository settings for the workflow:
 - Secret `TF_API_TOKEN`: Terraform Cloud user or team token with access to the target workspace.
 - Secret `TF_CLOUD_ORGANIZATION`: Terraform Cloud organization name.
 - Secret `TF_WORKSPACE`: Terraform Cloud workspace name.
-- Variable `GITHUB_OWNER`: GitHub organization to manage.
-- Secret `GITHUB_PROVIDER_TOKEN`: GitHub token exposed to the job as `GITHUB_TOKEN` for the Terraform GitHub provider.
+- Variable `GH_OWNER`: GitHub organization to manage.
+- Secret `GH_PROVIDER_TOKEN`: GitHub token exposed to the job as `GITHUB_TOKEN` for the Terraform GitHub provider.
 
 Important: in Terraform Cloud `Local` execution mode, workspace Terraform variables and variable sets are not used to execute the run. The workflow environment is the source of truth for runtime credentials and input variables.
 

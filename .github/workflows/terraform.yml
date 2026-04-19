@@ -31,8 +31,8 @@ jobs:
       TF_CLOUD_ORGANIZATION: ${{ secrets.TF_CLOUD_ORGANIZATION }}
       TF_WORKSPACE: ${{ secrets.TF_WORKSPACE }}
       TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
-      TF_VAR_github_owner: ${{ vars.GITHUB_OWNER }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_PROVIDER_TOKEN }}
+      TF_VAR_github_owner: ${{ vars.GH_OWNER }}
+      GITHUB_TOKEN: ${{ secrets.GH_PROVIDER_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
