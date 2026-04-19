@@ -1,0 +1,30 @@
+defaults:
+  target: branch
+  enforcement: active
+  ref_name_include:
+    - "~DEFAULT_BRANCH"
+  ref_name_exclude: []
+  deletion: true
+  non_fast_forward: true
+  required_linear_history: true
+  required_signatures: false
+  pull_request_required: true
+  required_approving_review_count: 1
+  dismiss_stale_reviews_on_push: true
+  require_code_owner_review: false
+  require_last_push_approval: false
+  required_review_thread_resolution: true
+  allowed_merge_methods:
+    - squash
+  required_status_checks: []
+  strict_required_status_checks_policy: true
+  do_not_enforce_on_create: false
+  required_deployments: []
+  bypass_actors: []
+
+rulesets:
+  - key: default-branch
+    name: Default branch protection
+    required_status_checks:
+      - context: terraform fmt
+      - context: terraform validate
