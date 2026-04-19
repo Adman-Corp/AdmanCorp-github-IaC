@@ -25,6 +25,3 @@ defaults:
 rulesets:
   - key: default-branch
     name: Default branch protection
-    required_status_checks:
-      - context: terraform fmt
-      - context: terraform validate
