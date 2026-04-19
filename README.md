@@ -64,7 +64,7 @@ Important: in Terraform Cloud `Local` execution mode, workspace Terraform variab
 
 The workflow in [.github/workflows/terraform.yml](/home/yadman/Github/AdmanCorp-github-IaC/.github/workflows/terraform.yml) does the following:
 
-- On pull requests, runs `terraform init`, `fmt -check`, `validate`, and `plan`.
+- On pull requests, runs `terraform init`, `fmt -check`, `validate`, and `plan`, then posts the rendered plan as a PR comment.
 - On pushes to `main`, runs the same checks and then applies the saved plan.
 - On manual dispatch, runs the same pipeline so you can trigger an ad hoc run.
 
@@ -87,14 +87,14 @@ Example repository entry:
 
 ```yaml
 - name: platform-example
-	description: Example repository managed by Terraform.
-	visibility: public
-	license_template: mit
-	topics:
-		- terraform
-		- github
-	rulesets:
-		- default-branch
+  description: Example repository managed by Terraform.
+  visibility: public
+  license_template: mit
+  topics:
+    - terraform
+    - github
+  rulesets:
+    - default-branch
 ```
 
 Supported repository fields include `visibility`, `topics`, `rulesets`, `gitignore_template`, and `license_template`. Set `license_template` to a GitHub license template key such as `mit`, `apache-2.0`, or `gpl-3.0` when you want the repository to be created with a license file.
