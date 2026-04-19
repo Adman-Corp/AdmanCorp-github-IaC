@@ -45,12 +45,12 @@ resource "github_repository_ruleset" "this" {
       for_each = var.ruleset.target == "push" || !var.ruleset.pull_request_required ? [] : [1]
 
       content {
-        dismiss_stale_reviews_on_push    = var.ruleset.dismiss_stale_reviews_on_push
-        require_code_owner_review        = var.ruleset.require_code_owner_review
-        require_last_push_approval       = var.ruleset.require_last_push_approval
-        required_approving_review_count  = var.ruleset.required_approving_review_count
+        dismiss_stale_reviews_on_push     = var.ruleset.dismiss_stale_reviews_on_push
+        require_code_owner_review         = var.ruleset.require_code_owner_review
+        require_last_push_approval        = var.ruleset.require_last_push_approval
+        required_approving_review_count   = var.ruleset.required_approving_review_count
         required_review_thread_resolution = var.ruleset.required_review_thread_resolution
-        allowed_merge_methods            = var.ruleset.allowed_merge_methods
+        allowed_merge_methods             = var.ruleset.allowed_merge_methods
       }
     }
 

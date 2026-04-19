@@ -9,7 +9,6 @@ terraform {
   }
 
   cloud {
-    
     organization = "AdmanCorp"
 
     workspaces {
@@ -17,5 +16,6 @@ terraform {
     }
   }
 }
+
 
 
