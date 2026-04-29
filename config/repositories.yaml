@@ -42,7 +42,7 @@ repositories:
     visibility: public
     topics:
       - kubernetes
-      - Disaster Recovery
+      - disaster-recovery
       - multicloud
       - gitops
     rulesets:
