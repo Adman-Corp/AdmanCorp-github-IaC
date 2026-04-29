@@ -38,11 +38,12 @@ repositories:
     rulesets:
       - default-branch
   - name: multicloud-k8s-failover
-    description: Active-passive multi-cloud Kubernetes disaster recovery platform — GitOps-driven failover across cloud providers.
+    description: Active-passive multi-cloud Kubernetes disaster recovery platform.
     visibility: public
     topics:
       - kubernetes
       - Disaster Recovery
       - multicloud
+      - gitops
     rulesets:
       - default-branch
