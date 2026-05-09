@@ -57,3 +57,13 @@ repositories:
       - argocd
     rulesets:
       - default-branch
+  - name: admancorp-platform-manifest
+    description: platform manifest repository for AdmanCorp's multi-cloud Kubernetes platform.
+    visibility: public
+    topics:
+      - kubernetes
+      - multicloud
+      - gitops
+      - manifest
+    rulesets:
+      - default-branch
