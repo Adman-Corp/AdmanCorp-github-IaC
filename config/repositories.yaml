@@ -67,3 +67,13 @@ repositories:
       - manifest
     rulesets:
       - default-branch
+  - name: admancorp-applications-manifests
+    description: applications manifests repository for AdmanCorp's multi-cloud Kubernetes platform.
+    visibility: public
+    topics:
+      - kubernetes
+      - multicloud
+      - gitops
+      - manifest
+    rulesets:
+      - default-branch
