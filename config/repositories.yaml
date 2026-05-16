@@ -67,6 +67,16 @@ repositories:
       - manifest
     rulesets:
       - default-branch
+  - name: admancorp-dr-failover
+    description: Automated disaster recovery failover runbooks and GitHub Actions workflows for the AdmanCorp multi-cloud Kubernetes platform.
+    visibility: public
+    topics:
+      - kubernetes
+      - disaster-recovery
+      - multicloud
+      - automation
+    rulesets:
+      - default-branch
   - name: admancorp-applications-manifests
     description: applications manifests repository for AdmanCorp's multi-cloud Kubernetes platform.
     visibility: public
