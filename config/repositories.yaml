@@ -47,6 +47,10 @@ repositories:
       - gitops
     rulesets:
       - default-branch
+    environments:
+      - Dev
+      - Uat
+      - Prod
   - name: admancorp-argocd-apps
     description: ArgoCD application repository for AdmanCorp's multi-cloud Kubernetes platform.
     visibility: public

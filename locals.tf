@@ -27,6 +27,7 @@ locals {
       vulnerability_alerts        = true
       web_commit_signoff_required = true
       rulesets                    = []
+      environments                = []
     },
     try(local.repositories_file.defaults, {})
   )

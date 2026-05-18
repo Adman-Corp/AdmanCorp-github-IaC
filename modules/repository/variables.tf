@@ -25,6 +25,7 @@ variable "repository" {
     vulnerability_alerts        = bool
     web_commit_signoff_required = bool
     rulesets                    = list(string)
+    environments                = list(string)
   })
 
   validation {

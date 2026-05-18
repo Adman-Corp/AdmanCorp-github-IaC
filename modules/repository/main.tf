@@ -31,3 +31,10 @@ resource "github_repository" "this" {
   vulnerability_alerts        = var.repository.vulnerability_alerts
   web_commit_signoff_required = var.repository.web_commit_signoff_required
 }
+
+resource "github_repository_environment" "this" {
+  for_each = toset(var.repository.environments)
+
+  repository  = github_repository.this.name
+  environment = each.key
+}
